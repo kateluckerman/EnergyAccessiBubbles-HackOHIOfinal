@@ -1,0 +1,159 @@
+.header {
+    background-color: #e0e0e0;
+    margin: 0;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+a {
+    text-decoration: none;
+    color: black; 
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+.primary-text {
+    color: #bb0000;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.secondary-text {
+    color: black;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-decoration-color: #bb0000;
+}
+
+.tertiary-text {
+    color: black;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.key-text {
+    color: black;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.7rem;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.toggle-text {
+    color: black;
+    font-size: 1.3rem;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+
+
+}
+
+.back {
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding-left: 0px;
+    padding-top: 0px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+}
+
+.full {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+}
+.one-third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 33%;
+    height: 65vh;
+    border-radius: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.two-thirds {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    height: 65vh;
+}
+
+.one-sixth {
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.electricity-chart {
+    display: block;
+    margin: auto;
+    height: 100%;
+}
+
+.inverted {
+    color: white;
+}
+.rounded-bubble {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.electricity-chart {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+
+#osu-wide-logo {
+    max-width: 450px;
+    display: block;
+    margin: auto;
+}
+#academics-research {
+   background-color: #660000;
+}
+#housing-activities {
+    background-color: #000000;
+}
+#visitors-attractions {
+    background-color: #839ec1;
+}
+#admin-facilities {
+    background-color: #666666;
+}
+#med-vet {
+    background-color: #909738;
+}
+#athletics {
+    background-color: #442369;
+}

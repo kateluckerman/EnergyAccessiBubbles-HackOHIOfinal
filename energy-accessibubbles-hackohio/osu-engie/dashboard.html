@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head class="grey">
+        <title>Main Dashboard</title>
+        <link rel="icon" type="image/jpg" href="img/osu-logo.jpg">
+        <link href="https://fonts.googleapis.com/css?family=Heebo::300,400,500i,900,900i" rel="stylesheet">
+        <link rel="stylesheet" href="dash.css">
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/49c7606d46.js"></script>
+        <script src="js/selection.js"></script>
+
+    
+    </head>
+    <body onload="fillContentType()">
+        <span id="dashboardVal"></span>
+        <div class="header">
+            <br>
+                <div class="full">
+                    <img src="img/osu-wide-logo.png" alt="osu logo" id="osu-wide-logo">
+                </div>
+        </div>
+        <br><br>
+        <p class="primary-text" id="data-view"></p><br><br>
+        <div class="full" id="data-display">
+            <div class="one-third">
+                <p class="secondary-text">WHAT DOES THIS CHART MEAN?</p>
+                <p class="tertiary-text">Mouse over each dot to see which building it corresponds to. The bigger the dot, the more energy it uses!</p>
+                <p class="secondary-text" id="unit">WHAT DOES kWh MEAN?</p>
+                <p class="tertiary-text" id="unitInfo">Scientifically speaking, one kWh (kilowatt hour) is equal to the power necesary to use a thousand watts of energy for an hour. In the real world, think of a kilowatt hour as the amount of energy needed to run a lightbulb all day.</p>
+                <p id="kWh-demo" class="primary-text">1 kWh = 1 x <i class="far fa-lightbulb"></i> x <i class="fas fa-calendar-day"></i></p>
+                <p id="kBTU-demo" class="primary-text">1 kBTU = 1,000 x <i class="fas fa-fire"></i></p>
+            </div>
+            <div class="one-half">
+                <div class="electricity-chart" id="chart">
+                    <svg id="showData"></svg>
+                </div>
+                <script src="https://d3js.org/d3.v4.js"></script>
+
+            </div>
+            <div class="one-sixth">
+                    <p class="tertiary-text inverted rounded-bubble" id="academics-research">Academics/Research</p>
+                    <p class="tertiary-text inverted rounded-bubble" id="housing-activities">Student Life</p>
+                    <p class="tertiary-text inverted rounded-bubble" id="visitors-attractions">Visitors/Attractions</p>
+                    <p class="tertiary-text inverted rounded-bubble" id="admin-facilities">Admin/Facilities</p>
+                    <p class="tertiary-text inverted rounded-bubble" id="med-vet">Medical/Veterinary</p>
+                    <p class="tertiary-text inverted rounded-bubble" id="athletics">Athletics</p>
+            </div>
+        </div>
+        <br> <br> <br>
+        <div class="full">
+            <div class="two-thirds" onload="chooseImg()">
+                <img id="heatmap" src="">
+            </div>
+            <div class="one-third grey">
+                <p class="primary-text">Can you spot the differences?</p>
+                <p class="toggle-text">Energy usage varies greatly across campus, but look for patterns near residence halls and large facilities.</p>
+                <p class="toggle-text">Red circles use the most energy and green circles use the least energy, while yellow areas represent the campus average.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div>
+            <a href="index.html" class="back"><i class="fas fa-arrow-left"></i>  VIEW ANOTHER UTILITY</a>
+        </div>
+
+    </div>
+
+    </body>
+</html>
