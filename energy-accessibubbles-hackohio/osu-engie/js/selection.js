@@ -13,7 +13,7 @@ $(document).ready(function(){
 });
 
 
-// variables that map element ID to user-friendly strings
+// variables that map element ID to user-friendly strings//
 var energyIDs = ["electricity", "cold-water", "hot-water", "steam"]
 var energyTypes = ["electricity", "cold water", "hot water", "steam"];
 var minRad = [3, 3, 3, 3]
@@ -67,14 +67,14 @@ function fillContentType() {
 
 function makeChart(utility, minRad, maxRad, farApart, unit)
 {
-    var url = "https://raw.githubusercontent.com/kateluckerman/HACKOHIO2019/master/" + utility + ".csv";
+    var url = "https://raw.githubusercontent.com/kateluckerman/energy-accessibubbles-HackOHIOversion/master/energy-accessibubbles-hackohio/osu-engie/csv%20files/" + utility + ".csv";
 d3.csv(url, function(error, data) {
 if (error) {
     console.error('Error getting or parsing the data.');
     throw error;
 }
 var chart = bubbleChart("Heebo", unit, 1.5, minRad, maxRad, farApart).width(700).height(500);
-// selection.datum() returns the bound datum for the first element in the selection and doesn't join the specified array of data with the selected elements//
+// selection.datum() returns the bound datum for the first element in the selection and doesn't join the specified array of data with the selected elements// 
 d3.select('#chart').datum(data).call(chart);
 });
     }
@@ -217,7 +217,7 @@ function bubbleChart(font, unit, scale, minR, maxR, fA) {
                 .attr("text-anchor", "middle")
                 .append("tspan")
                 .attr("x", function (d) {
-                    return 0;//-1*scaleRadius(d[columnForRadius])/3;
+                    return 0;//-1*scaleRadius(d[columnForRadius])/3; 
                 })
                 .attr("y", function (d) {
                     return ".3em";//scaleRadius(d[columnForRadius])/4;
